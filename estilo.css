@@ -228,13 +228,6 @@ footer{
         display: block;
     }
 
-    .trailer-video .size{
-        border-radius: 10px;
-        align-items: center;
-        margin-top: 1.5em;
-        margin-bottom: 1em;
-    }
-
     .trailer-button{
         display: none;
     }
