@@ -1,0 +1,241 @@
+:root{
+    --cor-site: #3C308C;
+    --cor-destaque: #C8C9EC;
+}
+
+@font-face {
+    font-family: Copperplate;
+    src: url(./font/CopperplateCC-Heavy.ttf);
+}
+
+html{
+    font-family: sans-serif;
+}
+
+.maxWidth{
+    max-width: 90em;
+}
+
+.header{
+    text-align: center;
+    margin: auto;
+}
+
+.header-logo{
+    width: 7em;
+    height: 100%;
+    margin: 1em;
+}
+
+.header-nav{
+    background-color: var(--cor-site);
+}
+
+ul{
+    margin: 0;
+}
+
+.header-nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-size: .95em;
+    font-family: Copperplate, sans-serif;
+}
+
+.header-nav a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: .75em;
+}
+
+.header-nav a:hover{
+    background-color: color-mix(in srgb, var(--cor-site), #fff 20%);
+}
+
+.trailer{
+    background-color: var(--cor-destaque);
+    padding-bottom: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 1.5em;
+}
+
+.trailer div{
+    text-align: center;
+    width: 85%;
+    margin: auto;
+}
+
+.trailer-title{
+    font-family: Copperplate, sans-serif;
+    color: var(--cor-site);
+    margin: 0;
+    padding-top: .75em;
+    font-size: 1.6em;
+}
+
+.trailer_paragraph{
+    margin-bottom: 2em;
+}
+
+.trailer-button{
+    display: inline-block;
+    margin: .75em 0;
+    padding: .75em 2em;
+    background-color: var(--cor-site);
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-family: Copperplate, sans-serif;
+    text-transform: uppercase;
+}
+
+.trailer-button:hover{
+    background-color: color-mix(in srgb, var(--cor-site), #fff 20%);
+}
+
+.trailer-video{
+    display: none;
+}
+
+.main-content{
+    background-color: #eeefff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.main-content div{
+    width: 80%;
+    margin: auto;
+    width: 80%;
+}
+
+.main-content-title{
+    font-family: Copperplate, sans-serif;
+    color: var(--cor-site);
+    margin-top: 0.5em;
+}
+
+.icon-img{
+    width: 6em;
+}
+
+.icon-img:hover{
+    transform: scale(1.1);
+    transition: ease-in-out 0.5s;
+}
+
+.main-content-button{
+    display: inline-block;
+    margin-top: 0.5em;
+    margin-bottom: 3em;
+    padding: 0.75em 2em;
+    background-color: var(--cor-site);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.main-content-button:hover{
+    background-color: color-mix(in srgb, var(--cor-site),  #fff 20%);
+}
+
+article a{
+    font-family: Copperplate, sans-serif;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.col{
+    flex: 1 0 auto;
+    width: 100%;
+}
+
+.col-12{
+    width: 100%;
+}
+
+footer{
+    background-color: var(--cor-site);
+    color: var(--cor-destaque);
+    font-family: Copperplate, sans-serif;
+    text-align: center;
+    padding: 1.5em;
+}
+
+
+/*telas maiores*/
+
+@media screen and (min-width: 48em){
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-logo{
+        margin-left: 2em;
+    }
+
+    .header-nav{
+        background-color: initial;
+    }
+
+    .header-nav ul{
+        margin-right: 2em;
+        font-size: .9em;
+    }
+
+    .header-nav li{
+        display: inline-block;
+    }
+
+    .header-nav a{
+        color: var(--cor-site);
+        border-radius: 5px;
+    }
+
+    .header-nav a:hover{
+        background-color: color-mix(in srgb, var(--cor-site), #fff 80%);
+    }
+
+    .trailer{
+        background-image: url(./imagens/bg2.jpg);
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-color: initial;
+    }
+
+    .trailer-title{
+        font-size: 2em;
+    }
+
+    .trailer-paragraph{
+        font-size: 1.15em;
+    }
+    
+    .trailer-video{
+        display: block;
+        border-radius: 10px;
+        align-items: center;
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    .trailer-button{
+        display: none;
+    }
+
+    .col-6{
+        width: calc(50% - 2rem);
+    }
+}
